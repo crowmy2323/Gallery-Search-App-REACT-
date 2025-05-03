@@ -1,64 +1,92 @@
 body {
-    direction: ltr;
-    font-family: 'vazir', sans-serif;
-    background-color: #D4C9BE !important;
-    margin: 0;
-    padding: 0;
-    color: #030303;
+    background-color: #2C2C2C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    /* width: 1200px; */
-    margin: 0 auto;
+.text-accent {
+    color: #F7374F;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background: #F1EFEC;
+.btn-accent {
+    background-color: #522546 !important;
+    color: #ccc !important;
+    border: none;
+    border-radius: 15px !important;
+    margin-left: 5px !important;
+    box-shadow: rgba(240, 46, 170, 0.1) 0px 5px,
+        rgba(240, 46, 170, 0.2) 0px 10px,
+        rgba(240, 46, 170, 0.1) 0px 15px,
+        rgba(240, 46, 170, 0.05) 0px 20px,
+        rgba(240, 46, 170, 0.01) 0px 25px;
+    transition: all 0.3s ease;
+    outline: none;
 }
 
-header ul {
-    display: flex;
-    align-items: center;
-
+.btn-accent:focus,
+.btn-accent:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
-header ul li {
-    padding: 15px 0;
-    margin-left: 20px;
-    cursor: pointer;
-    list-style-type: none;
+
+.btn-accent:hover {
+    background-color: #88304E;
+    color: #fff !important;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
 }
 
-.wrapper {
-    position: sticky;
-    top: 0;
-    right: 0;
+input.form-control {
+    background-color: #522546;
+    color: white;
+    border: none;
+    border-radius: 15px !important;
+    box-shadow: rgba(240, 46, 170, 0.1) 0px 5px,
+        rgba(240, 46, 170, 0.2) 0px 10px,
+        rgba(240, 46, 170, 0.1) 0px 15px,
+        rgba(240, 46, 170, 0.05) 0px 20px,
+        rgba(240, 46, 170, 0.01) 0px 25px;
+    transition: all 0.3s ease;
 }
 
-.progressbar {
+input.form-control:hover {
+    background-color: #5e2e5c;
+}
+
+input.form-control::placeholder {
+    color: #ccc;
+}
+
+input.form-control:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #5e2e5c;
+    color: #ccc;
+}
+
+.app-container {
+    background-color: #2C2C2C;
+}
+
+.img-box {
     width: 100%;
-    height: 5px;
-    background: #3C3D37;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: rgb(236, 223, 204) 0px 5px, rgb(171, 162, 149) 0px 10px, rgb(182, 172, 157)rgb(236, 223, 204) 0px 15px, rgb(192, 182, 167) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #522546;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.progressbarMain {
-    width: 0;
-    height: 5px;
-    background: #F0F0F0;
-    border-radius: 10px;
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-
-
-.content {
-    padding: 20px 300px;
-}
-
-.content p {
-    margin-top: 100px;
+.gallery-img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }

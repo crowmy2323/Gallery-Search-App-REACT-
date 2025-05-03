@@ -1,33 +1,35 @@
-# 📊 React Scroll Indicator Component
+# 📸 Unsplash Gallery Search App
 
-This project includes a simple and elegant **Scroll Progress Indicator** built with React. It shows a thin progress bar at the top of the page that visually indicates how much the user has scrolled through the content.
+A minimal and responsive image search gallery built with React and the Unsplash API. This app allows users to search and browse high-quality images using keywords, with a clean modern UI styled using Bootstrap and a custom color palette.
 
-## 🚀 Features
+## 🎨 Custom Color Palette
+- `#F7374F` (Accent Red)
+- `#88304E` (Muted Burgundy)
+- `#522546` (Deep Purple)
+- `#2C2C2C` (Dark Gray Background)
 
-- ✅ Built with **React Functional Components** and **Hooks**
-- ✅ Real-time scroll tracking using `useEffect` and `window.scroll`
-- ✅ Minimal and responsive design
-- ✅ Easy customization (colors, height, position, etc.)
-- ✅ Sticky positioning for persistent visibility
+## ✨ Features
+- 🔍 Search and display images directly from [Unsplash](https://unsplash.com/) using its public API
+- 🖼️ Responsive gallery layout with consistent image sizing (`aspect-ratio`)
+- 💻 Fully mobile-friendly and modern UI using Bootstrap 5
+- 🎯 Minimal hover and focus interactions for smooth UX
+- 🚀 Prepared for pagination or infinite scroll (in development)
 
-## 🧠 How It Works
+## 🛠️ Technologies Used
+- **React** (with Hooks)
+- **Bootstrap 5**
+- **Custom CSS**
+- **Unsplash API**
 
-The component listens for the `scroll` event and calculates how far down the user has scrolled as a percentage of the total scrollable height. The calculated percentage is then used to set the width of a top-fixed progress bar.
+## 🧪 How to Run Locally
 
-```javascript
-const winscroll = document.documentElement.scrollTop;
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-const scrolled = (winscroll / height) * 100;
- 
- 🛠 Usage
-Clone or copy the ScrollIndicator.jsx file into your project.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/unsplash-gallery-app.git
+cd unsplash-gallery-app
 
-Import and use <ScrollIndicator /> inside your main layout or App.js.
+# Install dependencies
+npm install
 
-Style it as you like using the provided CSS or your own.
-
-📁 Files Included
-ScrollIndicator.jsx – Main React component
-
-CSS styles – Built-in visual styles for progress bar
-
+# Run the app
+npm start
