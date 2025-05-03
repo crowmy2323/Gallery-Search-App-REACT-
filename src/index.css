@@ -1,111 +1,64 @@
 body {
     direction: ltr;
     font-family: 'vazir', sans-serif;
-    background-color: #f0f1f1 !important;
+    background-color: #D4C9BE !important;
     margin: 0;
     padding: 0;
+    color: #030303;
 }
 
-.infoTitle {
-    border-radius: 9px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    background: #edede9;
+.container {
+    /* width: 1200px; */
+    margin: 0 auto;
 }
 
-.review-img img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-.author {
-    color: #343a40;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.job {
-    color: #343a40;
-    font-weight: 600;
-    padding: 10px 0;
-}
-
-.info {
-    color: #6c757d;
-}
-
-.review-button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+header {
     display: flex;
-    gap: 12px;
+    align-items: center;
+    background: #F1EFEC;
 }
 
-.button-82-pushable {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
+header ul {
+    display: flex;
+    align-items: center;
+
+}
+
+header ul li {
+    padding: 15px 0;
+    margin-left: 20px;
     cursor: pointer;
-    margin-top: 10px;
+    list-style-type: none;
 }
 
-.button-82-shadow {
-    position: absolute;
+.wrapper {
+    position: sticky;
     top: 0;
-    left: 0;
+    right: 0;
+}
+
+.progressbar {
     width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: rgba(0, 0, 0, 0.25);
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+    height: 5px;
+    background: #3C3D37;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: rgb(236, 223, 204) 0px 5px, rgb(171, 162, 149) 0px 10px, rgb(182, 172, 157)rgb(236, 223, 204) 0px 15px, rgb(192, 182, 167) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
-.button-82-edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: linear-gradient(to left, #bdbbb6 0%, #839788 8%, #839788 92%, #73877b 100%);
+.progressbarMain {
+    width: 0;
+    height: 5px;
+    background: #F0F0F0;
+    border-radius: 10px;
 }
 
-.button-82-front {
-    display: block;
-    position: relative;
-    padding: 0 10px;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    color: white;
-    background: #839788;
-    transform: translateY(-4px);
-    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+
+
+.content {
+    padding: 20px 300px;
 }
 
-.button-82-pushable:hover .button-82-front {
-    transform: translateY(-6px);
-    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-82-pushable:active .button-82-front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-}
-
-.button-82-pushable:hover .button-82-shadow {
-    transform: translateY(4px);
-    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-}
-
-.button-82-pushable:active .button-82-shadow {
-    transform: translateY(1px);
-    transition: transform 34ms;
+.content p {
+    margin-top: 100px;
 }

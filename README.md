@@ -1,31 +1,33 @@
-# 👤 React Review Carousel
+# 📊 React Scroll Indicator Component
 
-This project is a simple, animated **review carousel** built with **React**, **Framer Motion**, and **React Bootstrap**. It allows users to navigate through reviews using previous, next, and random buttons, with smooth transition animations and custom-styled buttons.
+This project includes a simple and elegant **Scroll Progress Indicator** built with React. It shows a thin progress bar at the top of the page that visually indicates how much the user has scrolled through the content.
 
-## ✨ Features
+## 🚀 Features
 
-- Smooth **slide animations** with Framer Motion
-- **Auto-play** every 5 seconds
-- Custom "Next", "Previous", and "Random" navigation buttons
-- Clean, responsive UI with **custom color palette**
-- Styled using **CSS and Bootstrap**
+- ✅ Built with **React Functional Components** and **Hooks**
+- ✅ Real-time scroll tracking using `useEffect` and `window.scroll`
+- ✅ Minimal and responsive design
+- ✅ Easy customization (colors, height, position, etc.)
+- ✅ Sticky positioning for persistent visibility
 
-## 🎨 Color Palette
+## 🧠 How It Works
 
-- `#bdbbb6` – Soft Beige  
-- `#839788` – Muted Green  
-- `#73877b` – Earthy Gray-Green  
+The component listens for the `scroll` event and calculates how far down the user has scrolled as a percentage of the total scrollable height. The calculated percentage is then used to set the width of a top-fixed progress bar.
 
-## 🧠 Technologies Used
+```javascript
+const winscroll = document.documentElement.scrollTop;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+const scrolled = (winscroll / height) * 100;
+ 
+ 🛠 Usage
+Clone or copy the ScrollIndicator.jsx file into your project.
 
-- [React](https://reactjs.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [React Icons](https://react-icons.github.io/react-icons/)
+Import and use <ScrollIndicator /> inside your main layout or App.js.
 
-## 🚀 Getting Started
+Style it as you like using the provided CSS or your own.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+📁 Files Included
+ScrollIndicator.jsx – Main React component
+
+CSS styles – Built-in visual styles for progress bar
+
