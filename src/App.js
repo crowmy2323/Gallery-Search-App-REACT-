@@ -57,17 +57,17 @@ function App() {
         {result.length > 0 && (
           <div className="d-flex justify-content-center gap-3">
             <button
-              className="btn btn-secondary"
+              className="btn btn-accent"
               onClick={() => setPage(prev => Math.max(prev - 1, 1))}
               disabled={page === 1}
             >
-              NEXT
+              PREV
             </button>
             <button
               className="btn btn-accent"
               onClick={() => setPage(prev => prev + 1)}
             >
-              PREV
+              NEXT
             </button>
           </div>
         )}
